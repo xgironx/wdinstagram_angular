@@ -1,0 +1,12 @@
+<a data-ui-sref="gramNew">Make me a new gram</a>
+
+<h2>My grams</h2>
+
+<div data-ng-repeat="gram in vm.grams" class = "photo">
+  <p>
+    <!-- <a data-ui-sref="gramShow({id: gram.id})">{{gram.author}}</a>
+    <a data-ui-sref="gramShow({id: gram.id})">{{gram.body}}</a> -->
+    (<a data-ui-sref="gramEdit({id: gram.id})">Edit</a>)
+    <p><img data-ng-src={{gram.photo_url}} /></p>
+</p>
+</div>

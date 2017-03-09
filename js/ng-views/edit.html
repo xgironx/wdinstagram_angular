@@ -1,0 +1,11 @@
+<h1>Change my gram</h1>
+
+<img data-ng-src={{vm.gram.photo_url}}>
+
+<form>
+    <p><input placeholder='Photo URL' data-ng-model='vm.gram.photo_url' /></p>
+    <p><input placeholder='Author'    data-ng-model='vm.gram.author' /></p>
+    <p><input placeholder='body'      data-ng-model='vm.gram.body' /></p>
+    <p><button                        data-ng-click='vm.update()'> Update Me </button></p>
+</form>
+    <p><button                        data-ng-click='vm.destroy()'> Delete Him </button></p>

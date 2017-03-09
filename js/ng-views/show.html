@@ -1,0 +1,7 @@
+<h2>Hey {{vm.gram.author}}</h2>
+<p>Hey {{vm.gram.body}}</p>
+<div> <img class="photo" ng-src={{vm.gram.photo_url}} /> </div>
+
+<h2>{{vm.gram.body}}</h2>
+
+<a ui-sref="gramEdit({id: vm.gram.id})">Edit</a>
